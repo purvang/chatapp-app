@@ -1,0 +1,16 @@
+<html>
+<head>
+	<title></title>
+	 <!--<script type="text/javascript">
+	 		window.location.assign("http://chatapp27614.herokuapp.com/");//should remove this3
+	 </script>-->
+</head>
+<body>
+	<div id="content" style='width: 500px; height: 300px; margin: 0 0 20px 0; border: solid 1px #999; overflow-y: scroll;'></div>
+	<textarea id="msg" placeholder="Enter text here" autofocus cols="45" rows=1 style="float:left" onkeydown="if (event.keyCode == 13) document.getElementById('send').click()"></textarea>
+	<button id="send" style="float:left">S4end</button>
+
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="../js/chat.js"></script>
+</body>
+</html>
